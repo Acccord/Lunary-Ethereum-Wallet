@@ -3,12 +3,12 @@
     package="rehanced.com.simpleetherwallet">
 
     <supports-screens
+        android:anyDensity="true"
         android:largeScreens="true"
         android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true"
         android:resizeable="true"
-        android:anyDensity="true" />
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -56,17 +56,17 @@
     <supports-screens android:anyDensity="true" />
 
     <application
+        android:name=".activities.AnalyticsApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:name=".activities.AnalyticsApplication"
         android:largeHeap="true"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/title_activity_main"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -76,58 +76,58 @@
         </activity>
         <activity
             android:name=".activities.AddressDetailActivity"
-            android:label="@string/title_activity_main"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar2" />
         <activity
             android:name=".activities.QRScanActivity"
-            android:label="@string/title_activity_main"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar2" />
         <activity
             android:name=".activities.SettingsActivity"
-            android:label="@string/title_activity_settings"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activities.WalletGenActivity"
-            android:label="@string/title_activity_settings"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar2" />
         <activity
             android:name=".activities.RequestEtherActivity"
-            android:label="@string/title_activity_settings"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar2" />
         <activity
             android:name=".activities.SendActivity"
-            android:label="@string/title_activity_settings"
             android:configChanges="orientation|screenSize"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-            android:theme="@style/AppTheme.NoActionBar2" />
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar2"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".activities.AppIntroActivity"
-            android:theme="@style/AppTheme.NoActionBar2"
-            android:label="@string/title_activity_main" />
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar2" />
         <activity
             android:name=".activities.PrivateKeyActivity"
-            android:label="@string/title_activity_settings"
             android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar2" />
 
         <activity
             android:name=".activities.AppLockActivity"
-            android:theme="@style/AppTheme.NoActionBar2"
             android:configChanges="orientation"
+            android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
-            android:label="@string/title_activity_main" />
+            android:theme="@style/AppTheme.NoActionBar2" />
 
         <activity
             android:name=".activities.SetAppLockActivity"
-            android:theme="@style/AppTheme.NoActionBar2"
             android:configChanges="orientation"
+            android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
-            android:label="@string/title_activity_main">
+            android:theme="@style/AppTheme.NoActionBar2">
             <intent-filter>
                 <action android:name="rehanced.com.simpleetherwallet.activities.SetAppLockActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
